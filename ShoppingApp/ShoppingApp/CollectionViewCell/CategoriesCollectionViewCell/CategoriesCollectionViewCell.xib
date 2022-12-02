@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYMEDIUM.OTF">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriesCollectionViewCell" id="gTV-IL-0wX" customClass="CategoriesCollectionViewCell" customModule="ShoppingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="143" height="149"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6i-fU-DnP" customClass="CustomUIView" customModule="ShoppingApp" customModuleProvider="target">
+                        <rect key="frame" x="36.5" y="0.0" width="70" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cmn-Z1-MVR">
+                                <rect key="frame" x="11" y="11" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="6m6-HP-Mxk"/>
+                                    <constraint firstAttribute="height" constant="48" id="zSm-K8-o7H"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cmn-Z1-MVR" firstAttribute="centerY" secondItem="E6i-fU-DnP" secondAttribute="centerY" id="PVx-Sr-2Bz"/>
+                            <constraint firstAttribute="width" constant="70" id="i4H-IC-CbC"/>
+                            <constraint firstAttribute="height" constant="70" id="wmv-Fe-FQo"/>
+                            <constraint firstItem="Cmn-Z1-MVR" firstAttribute="centerX" secondItem="E6i-fU-DnP" secondAttribute="centerX" id="z5V-n0-kfB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
+                                <real key="value" value="35"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yk-9w-Oge">
+                        <rect key="frame" x="36.5" y="74" width="70" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="AZf-Oz-tzr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                        <color key="textColor" red="0.11372549019607843" green="0.12941176470588234" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="0yk-9w-Oge" firstAttribute="trailing" secondItem="E6i-fU-DnP" secondAttribute="trailing" id="8gM-mN-nKl"/>
+                <constraint firstItem="0yk-9w-Oge" firstAttribute="leading" secondItem="E6i-fU-DnP" secondAttribute="leading" id="E1w-Od-uSR"/>
+                <constraint firstItem="E6i-fU-DnP" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="HEz-es-as6"/>
+                <constraint firstItem="0yk-9w-Oge" firstAttribute="top" secondItem="E6i-fU-DnP" secondAttribute="bottom" constant="4" id="JBI-BX-Ags"/>
+                <constraint firstItem="0yk-9w-Oge" firstAttribute="centerX" secondItem="E6i-fU-DnP" secondAttribute="centerX" id="VX0-a4-be1"/>
+                <constraint firstItem="E6i-fU-DnP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="koc-3p-dMA"/>
+            </constraints>
+            <size key="customSize" width="143" height="149"/>
+            <connections>
+                <outlet property="categoryImageView" destination="Cmn-Z1-MVR" id="OWk-ST-OSr"/>
+                <outlet property="categoryLabel" destination="0yk-9w-Oge" id="1Dm-Ft-T7O"/>
+            </connections>
+            <point key="canvasLocation" x="3.6231884057971016" y="73.995535714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>
